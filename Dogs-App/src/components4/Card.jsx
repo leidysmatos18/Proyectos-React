@@ -1,13 +1,10 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ onlyDog }) => {
   return (
-    <div>
-      <img
-        src="https://primicia.com.ve/wp-content/uploads/2022/07/los-10-sonidos-principales-del-perro.jpg"
-        alt=""
-      />
-      <p>perrito</p>
+    <div className="card">
+      <img src={onlyDog?.image.url} alt="Dog" />
+      <p>{onlyDog?.name}</p>
     </div>
   );
 };
